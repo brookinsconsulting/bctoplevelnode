@@ -1,0 +1,126 @@
+BC TopLevelNode extension INSTALL
+
+Introduction
+============
+
+1. What is the BC TopLevelNode extension?
+   ------------------------------------------------
+
+   BC TopLevelNode is a true eZ publish extension that
+   provides commandline script to create top level node
+   or move a node to the top level root node.
+
+   For more information about this extension please read the README file.
+
+1. License
+   -------
+
+   BC TopLevelNode is licensed under the GNU General Public License.
+
+   The GNU GPL gives you the right to use, modify and redistribute
+   BC TopLevelNode under certain conditions. The GNU GPL licence
+   is distributed with the software, see the file doc/LICENCE.
+   It is also available at http://www.gnu.org/licenses/gpl.txt
+
+   Using BC TopLevelNode under the terms of the GNU GPL is free (as in freedom).
+
+   For more information or questions please contact
+   license@brookinsconsulting.com
+
+2. Requirements
+   ------------
+
+   The following requirements exists for using BC TopLevelNode extension:
+
+   o  eZ publish version:
+
+      Make sure you use eZ publish version 4.x or higher.
+
+      eZ Publish 2011.10 (4.6+) is recommended.
+
+   o  PHP version:
+
+      Make sure you have PHP 5.x or higher.
+
+
+Getting eZ Publish
+==================
+
+You can download a version of eZ Publish from share.ez.no,
+you will find the various versions at:
+
+http://share.ez.no/download
+
+NOTE: You will only require eZ Publish 4.x or higher (if you have a more recent version)
+
+Information on the installation of eZ publish can be found at:
+http://doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation
+and
+http://doc.ez.no
+http://share.ez.no
+
+
+Installing BC TopLevelNode extension
+==============================================
+
+1. Copy the package into the `extension' directory
+   in the root of your eZ publish installation.
+
+2. Unpack the files in the distribution. The command
+   necessary is depends on the file you downloaded.
+   [tar.gz]:
+   $ tar -zxvf bctoplevelnode-0_0_3.tar.gz
+   [zip]:
+   $ unzip bctoplevelnode-0_0_3.tar.zip
+
+3. No further actions needed. Simply run scripts as needed
+
+
+Usage
+==============================
+
+The move command line script: ./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php
+
+This script will move the node-id specified by script parameter to the top level root node
+
+cd /path/to/ezpublish/;
+
+Use --help option to review available command line options:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php --siteacess ezwebin_site_user --help
+
+Examples alternatives:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php --siteacess ezwebin_site_user --admin-user=admin --class-id=1 --name=ExampleNodeName001
+
+
+The move node to top level root node command line script: ./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php
+
+This script will move the node-id specified by script parameter to the top level root node
+
+cd /path/to/ezpublish/;
+
+Use --help option to review available command line options:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --help
+
+Examples alternatives:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --admin-user=admin --node-id=4400
+
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones are listed
+   in the the FAQ.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact Brookins Consulting trough the support system:
+   http://brookinsconsulting.com/contact

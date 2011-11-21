@@ -1,0 +1,98 @@
+BC TopLevelNode extension README
+
+What is the BC TopLevelNode extension?
+================================
+
+BC TopLevelNode is a true eZ publish extension
+that provides commandline script to create
+top level node or move a node to the top level root node.
+
+
+BC TopLevelNode version
+=======================
+
+The current version of BC TopLevelNode is 0.0.3
+Last Major update: November 22, 2011
+
+You can find details about changes for this
+version in doc/changelogs/CHANGELOG-0.0.3
+
+
+License
+=======
+
+This software is licensed under the GNU General Public License.
+
+The complete license agreement is included in the doc/LICENSE file.
+
+For more information or questions please contact license@brookinsconsulting.com
+
+
+Requirements
+============
+
+The following requirements exists for using BC TopLevelNode extension:
+
+o  eZ publish version:
+
+   Make sure you use eZ publish version 4.x or higher. eZ Publish 4.6+ is recommended.
+
+o  PHP version:
+
+   Make sure you have PHP 5.x or higher.
+
+
+Installation
+============
+
+Details on installing BC TopLevelNode located in the file doc/INSTALL.
+
+
+Usage
+============
+
+The move command line script: ./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php
+
+This script will move the node-id specified by script parameter to the top level root node
+
+cd /path/to/ezpublish/;
+
+Use --help option to review available command line options:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php --siteacess ezwebin_site_user --help
+
+Examples alternatives:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodecreate.php --siteacess ezwebin_site_user --admin-user=admin --class-id=1 --name=ExampleNodeName001
+
+
+The move node to top level root node command line script: ./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php
+
+This script will move the node-id specified by script parameter to the top level root node
+
+cd /path/to/ezpublish/;
+
+Use --help option to review available command line options:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --help
+
+Examples alternatives:
+
+./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --admin-user=admin --node-id=4400
+
+
+Troubleshooting
+===============
+
+1. Read the FAQ
+   ------------
+
+   Some problems are more common than others. The most common ones
+   are listed in the the FAQ.
+
+2. Support
+   -------
+
+   If you have find any problems not handled by this document or the FAQ you
+   can contact Brookins Consulting through the support system:
+   http://brookinsconsulting.com/contact
