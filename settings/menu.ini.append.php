@@ -9,9 +9,9 @@
 #
 #
 ##[MenuContentSettings]
-# This list contains the identifiers of the classse
-# that are allowed to be shown in top menues
-# only use if needed, provided as a reference
+## This list contains the identifiers of the classse
+## that are allowed to be shown in top menues
+## only use if needed, provided as a reference
 ## TopIdentifierList[]=customfolder
 ## TopIdentifierList[]=customtoplevelfolder
 
