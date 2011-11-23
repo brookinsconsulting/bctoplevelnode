@@ -39,9 +39,9 @@ $user = eZUser::fetchByName( $adminUser );
 $userCreatorID = $user->attribute( 'contentobject_id' );
 
 // Test for user object 
-if ( is_object( $user ) )
+if( is_object( $user ) )
 {
-        if ( $user->loginCurrent() )
+        if( $user->loginCurrent() )
         {
            $cli->output( 'Logged in as ' . "'" . $adminUser . "'" );
         }

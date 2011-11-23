@@ -109,6 +109,17 @@ Examples alternatives:
 ./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --admin-user=admin --node-id=4400
 
 
+If you wish to provide an admin top menu entry for your newly created top level node ...
+
+I think you could / would need the following example menu.ini configuration
+for this use case to provide a top menu entry to your new top level node in the content tree.
+
+See: ./extension/bctoplevelnode/settings/menu.ini.append.php
+
+To use simply copy into your settings/override/menu.ini.append.php
+and uncomment the first level of comment characters.
+
+
 Troubleshooting
 ===============
 

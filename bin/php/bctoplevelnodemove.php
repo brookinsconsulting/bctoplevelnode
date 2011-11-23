@@ -35,7 +35,7 @@ $name = isset( $options['name'] ) ? $options['name'] : 'Default node name';
 $topLevelNodeID = 1;
 
 // Test for required parameters, exit if not provided
-if ( !isset( $options['node-id'] ) or $nodeID == false )
+if( !isset( $options['node-id'] ) or $nodeID == false )
 {
     $cli->error( 'No node_id script paramter provided. Exiting ...' );
     $script->shutdown( 1 );
@@ -46,9 +46,9 @@ $user = eZUser::fetchByName( $adminUser );
 $userCreatorID = $user->attribute( 'contentobject_id' );
 
 // Test for user object 
-if ( is_object( $user ) )
+if( is_object( $user ) )
 {
-        if ( $user->loginCurrent() )
+        if( $user->loginCurrent() )
         {
            $cli->output( 'Logged in as ' . "'" . $adminUser . "'" );
         }
