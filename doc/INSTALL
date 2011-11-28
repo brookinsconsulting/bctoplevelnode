@@ -6,11 +6,11 @@ Introduction
 1. What is the BC TopLevelNode extension?
    ------------------------------------------------
 
-   BC TopLevelNode is a true eZ publish extension that
-   provides commandline script to create top level node
+   BC TopLevelNode is a true eZ Publish extension that
+   provides command line script to create top level node
    or move a node to the top level root node.
 
-   For more information about this extension please read the README file.
+   For more information about this extension please read the doc/README file.
 
 1. License
    -------
@@ -18,8 +18,8 @@ Introduction
    BC TopLevelNode is licensed under the GNU General Public License.
 
    The GNU GPL gives you the right to use, modify and redistribute
-   BC TopLevelNode under certain conditions. The GNU GPL licence
-   is distributed with the software, see the file doc/LICENCE.
+   BC TopLevelNode under certain conditions. The GNU GPL license
+   is distributed with the software, see the file doc/LICENSE.
    It is also available at http://www.gnu.org/licenses/gpl.txt
 
    Using BC TopLevelNode under the terms of the GNU GPL is free (as in freedom).
@@ -32,9 +32,9 @@ Introduction
 
    The following requirements exists for using BC TopLevelNode extension:
 
-   o  eZ publish version:
+   o  eZ Publish version:
 
-      Make sure you use eZ publish version 4.x or higher.
+      Make sure you use eZ Publish version 4.x or higher.
 
       eZ Publish 2011.10 (4.6+) is recommended.
 
@@ -53,7 +53,7 @@ http://share.ez.no/download
 
 NOTE: You will only require eZ Publish 4.x or higher (if you have a more recent version)
 
-Information on the installation of eZ publish can be found at:
+Information on the installation of eZ Publish can be found at:
 http://doc.ez.no/eZ-Publish/Technical-manual/4.6/Installation
 and
 http://doc.ez.no
@@ -64,7 +64,7 @@ Installing BC TopLevelNode extension
 ==============================================
 
 1. Copy the package into the `extension' directory
-   in the root of your eZ publish installation.
+   in the root of your eZ Publish installation.
 
 2. Unpack the files in the distribution. The command
    necessary is depends on the file you downloaded.
@@ -109,17 +109,6 @@ Examples alternatives:
 ./extension/bctoplevelnode/bin/php/bctoplevelnodemove.php --siteacess ezwebin_site_user --admin-user=admin --node-id=4400
 
 
-If you wish to provide an admin top menu entry for your newly created top level node ...
-
-I think you could / would need the following example menu.ini configuration
-for this use case to provide a top menu entry to your new top level node in the content tree.
-
-See: ./extension/bctoplevelnode/settings/menu.ini.append.php
-
-To use simply copy into your settings/override/menu.ini.append.php
-and uncomment the first level of comment characters.
-
-
 Troubleshooting
 ===============
 
@@ -127,7 +116,7 @@ Troubleshooting
    ------------
 
    Some problems are more common than others. The most common ones are listed
-   in the the FAQ.
+   in the the doc/FAQ.
 
 2. Support
    -------
