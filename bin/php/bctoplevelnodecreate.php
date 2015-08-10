@@ -21,7 +21,7 @@ $script = eZScript::instance( array( 'description' => ( "bctoplevelnodecreate : 
 $script->startup();
 
 // Fetch default script options
-$options = $script->getOptions( "[admin-user:][class:][name:]",
+$options = $script->getOptions( "[admin-user:][class-id:][name:]",
                                 "",
                                 array( 'admin-user' => 'Admin user login name',
                                        'class-id' => 'ClassID of node to create',
