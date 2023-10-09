@@ -81,7 +81,7 @@ $nodeAssignment->store();
 // Set version modified and status content 
 $version = $contentObject->version( 1 );
 $version->setAttribute( 'modified', time() );
-$version->setAttribute( 'status', EZ_VERSION_STATUS_DRAFT );
+$version->setAttribute( 'status', eZContentObject::STATUS_DRAFT );
 $version->store();
 
 // Fetch contentObject IDs 
